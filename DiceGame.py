@@ -274,8 +274,9 @@ class Player:
 
         # Three-of-a-kinds -------------------------------------------------------------------------------------------
 
-        # Ones not here; included in full house scoring
-
+        if remaining_dice.count(1) == 3:
+            new_points = 1000
+            used_dice = [1, 1, 1]
         if remaining_dice.count(2) == 3:
             new_points = 200
             used_dice = [2, 2, 2]
@@ -409,19 +410,19 @@ class Player:
 
             # Automatically rolls again if ice has not been broken and 500 points not attained
             if not self.broken_ice and prev_score < 500:
-                print("\n" + "Ice not yet broken. I'll roll for you so you don't seem as dumb!")
+                print("\nIce not yet broken. I'll roll for you so you don't seem as dumb!")
                 time.sleep(1)
                 roll_again = True
 
             # Breaks ice and ends turn if ≥ points scored
-            if not self.broken_ice and turn_score >= 500:
+            if not self.broken_ice and prev_score >= 500:
                 print("\nIce has been broken!")
                 self.broken_ice = True
                 roll_again = False
 
             # Prints what dice are held at end of turn
             if self.broken_ice:
-                print("\n" + "Final scoring dice: {}".format(all_dice))
+                print("\nFinal scoring dice: {}".format(all_dice))
                 roll_again = False
 
             # Dice left in play which can be passed on to next player
