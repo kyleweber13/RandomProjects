@@ -3,6 +3,9 @@ import random
 import time
 
 """
+
+Able to run online via https://repl.it/languages/python3 (paste code and hit 'run')
+
                                                         GAME RULES
                                                    
 -Classic family game played with 2+ players and 5 dice
