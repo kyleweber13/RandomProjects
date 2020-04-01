@@ -1,8 +1,5 @@
-# KYLE WEBER HAD TIME TO KILL DURING THE GREAT CORONAVIRUS QUANARTINE OF MARCH 2020
-import random
-import time
-
 """
+KYLE WEBER HAD TIME TO KILL DURING THE GREAT CORONAVIRUS QUANARTINE OF MARCH 2020
 
 Able to run online via https://repl.it/languages/python3 (paste code and hit 'run')
 
@@ -97,6 +94,9 @@ PLAYING
 roll _ number of dice on top of _ number of points. 
 """
 
+import random
+import time
+
 
 class Player:
 
@@ -109,7 +109,7 @@ class Player:
 
         self.name = name
         self.other_player = other_player
-        self.broken_ice = True
+        self.broken_ice = False
         self.total_score = 0
         self.scoring_round = False
         self.score_to_pass = 0
