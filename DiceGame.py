@@ -6,7 +6,7 @@ import time
 
 Able to run online via https://repl.it/languages/python3 (paste code and hit 'run')
 
-                                                        GAME RULES
+                                               GAME RULES
                                                    
 -Classic family game played with 2+ players and 5 dice
 
@@ -70,7 +70,7 @@ HOW TO WIN
  to the score that you had at the start of your turn. 
  
  
-                                                     PLAYING INSTRUCTIONS
+                                               PLAYING INSTRUCTIONS
 
 SET UP
 -You will be prompted to input both players' names in the console once you run the script.
