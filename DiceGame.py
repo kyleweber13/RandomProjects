@@ -96,6 +96,7 @@ roll _ number of dice on top of _ number of points.
 
 import random
 import time
+import DiceGameGUI as gui
 
 
 class Player:
@@ -439,11 +440,15 @@ class Player:
         return all_dice, n_dice_left, turn_score, roll_again
 
 
-p1 = Player(name=input("Player 1's name: "))
+"""p1 = Player(name=input("Player 1's name: "))
 p2 = Player(name=input("Player 2's name: "), other_player=p1)
 p1.other_player = p2
 
 while p1.total_score <= 10000 and p2.total_score <= 10000:
     p1.play_a_turn()
     time.sleep(1)
-    p2.play_a_turn()
+    p2.play_a_turn()"""
+
+# TODO
+# Change y/n on dice roll to binary
+# Error handling for invalid input (non-int) on dice hold
